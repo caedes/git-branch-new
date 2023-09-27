@@ -5,6 +5,7 @@ import { input, select } from "@inquirer/prompts";
 
 import { changeTypes, ChangeType, ChangeTypeName } from "./change-types";
 import branchName from "./branch-name";
+import trigram from "./trigram";
 
 interface Choice extends ChangeType {
   value: ChangeTypeName;
@@ -39,7 +40,7 @@ interface Choice extends ChangeType {
   const fullBranchName: string = branchName(
     changeTypeChoice,
     jira,
-    userName,
+    trigram(userName),
     shortDescription
   );
 

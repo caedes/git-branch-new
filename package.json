@@ -1,6 +1,6 @@
 {
   "name": "@caedes/git-branch-new",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "New Git branch creation CLI",
   "source": "src/index.ts",
   "main": "dist/main.js",
