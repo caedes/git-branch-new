@@ -1,0 +1,31 @@
+{
+  "name": "@caedes/git-branch-new",
+  "version": "1.0.0",
+  "description": "New Git branch creation CLI",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "bin": {
+    "gbn": "./dist/main.js"
+  },
+  "repository": "https://github.com/caedes/git-branch-new.git",
+  "author": "caedes <laurentromain@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build --no-cache",
+    "postbuild": "tsc --noEmit",
+    "dev": "yarn build && node ./dist/main.js"
+  },
+  "devDependencies": {
+    "@parcel/transformer-typescript-types": "2.9.3",
+    "@types/to-snake-case": "^1.0.0",
+    "parcel": "^2.9.3",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.1.1",
+    "to-snake-case": "^1.0.0"
+  }
+}
