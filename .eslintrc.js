@@ -9,6 +9,7 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:security/recommended",
     "plugin:xss/recommended",
+    "plugin:vitest/recommended",
     "prettier",
   ],
   plugins: ["@typescript-eslint", "simple-import-sort"],

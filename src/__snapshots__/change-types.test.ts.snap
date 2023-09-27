@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`changeTypes > exists 1`] = `
+[
+  {
+    "description": "Adding missing tests",
+    "name": "test",
+  },
+  {
+    "description": "A new feature",
+    "name": "feat",
+  },
+  {
+    "description": "A bug fix",
+    "name": "fix",
+  },
+  {
+    "description": "Build process or auxiliary tool changes",
+    "name": "chore",
+  },
+  {
+    "description": "Documentation only changes",
+    "name": "docs",
+  },
+  {
+    "description": "A code change that neither fixes a bug or adds a feature",
+    "name": "refactor",
+  },
+  {
+    "description": "Markup, white-space, formatting, missing semi-colons...",
+    "name": "style",
+  },
+  {
+    "description": "CI related changes",
+    "name": "ci",
+  },
+  {
+    "description": "A code change that improves performance",
+    "name": "perf",
+  },
+]
+`;

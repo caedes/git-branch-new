@@ -14,7 +14,8 @@
     "build": "parcel build --no-cache",
     "dev": "yarn build && node ./dist/main.js",
     "lint": "eslint --cache .",
-    "postbuild": "tsc --noEmit"
+    "prebuild": "tsc --noEmit",
+    "test": "vitest"
   },
   "devDependencies": {
     "@parcel/transformer-typescript-types": "2.9.3",
@@ -27,9 +28,11 @@
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-vitest": "^0.3.1",
     "eslint-plugin-xss": "^0.1.12",
     "parcel": "^2.9.3",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.5"
   },
   "engines": {
     "node": ">= 18"
