@@ -3,11 +3,11 @@
 import { execSync } from "child_process";
 import { input, select } from "@inquirer/prompts";
 
-import { changeTypes, ChangeType } from "./change-types";
+import { changeTypes, ChangeType, ChangeTypeName } from "./change-types";
 import branchName from "./branch-name";
 
 interface Choice extends ChangeType {
-  value: string;
+  value: ChangeTypeName;
 }
 
 (async () => {
@@ -19,10 +19,10 @@ interface Choice extends ChangeType {
     })
   );
 
-  const changeTypeChoice: string = await select({
+  const changeTypeChoice: ChangeTypeName = (await select({
     message: "Select the type of change that you want to commit",
     choices: changeTypeChoices,
-  });
+  })) as ChangeTypeName;
 
   const jira: string = await input({
     message: "Enter your Jira ticket e.g. DEVEX-123",

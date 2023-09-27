@@ -1,7 +1,9 @@
 import toSnakeCase from "to-snake-case";
 
+import { ChangeTypeName } from "./change-types";
+
 export default function branchName(
-  changeTypeChoice: string,
+  changeTypeChoice: ChangeTypeName,
   jira: string,
   userName: string,
   description: string
