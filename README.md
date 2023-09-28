@@ -2,7 +2,7 @@
 
 ## Usage
 
-_Missing usage_
+[![asciicast](https://asciinema.org/a/QznvBELcd0lLffUEuyFP1qLi7.svg)](https://asciinema.org/a/QznvBELcd0lLffUEuyFP1qLi7)
 
 ## Installation
 
