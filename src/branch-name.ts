@@ -1,4 +1,4 @@
-import toSnakeCase from "to-snake-case";
+import camelCase from "camelcase";
 
 import { ChangeTypeName } from "./change-types";
 
@@ -9,15 +9,14 @@ export default function branchName(
   description: string
 ): string {
   const branchDescriptionArray: string[] = [
-    jira,
+    jira.toLowerCase(),
     userName,
-    toSnakeCase(description),
+    camelCase(description),
   ].filter((subString) => subString);
 
   const branchDescription: string = branchDescriptionArray
     .join("_")
-    .replace(/\r?\n|\r/g, "")
-    .toLowerCase();
+    .replace(/\r?\n|\r/g, "");
 
   return `${changeTypeChoice}/${branchDescription}`;
 }

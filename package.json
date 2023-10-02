@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@parcel/transformer-typescript-types": "2.9.3",
-    "@types/to-snake-case": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "eslint": "^8.50.0",
@@ -39,6 +38,6 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^3.1.1",
-    "to-snake-case": "^1.0.0"
+    "camelcase": "^8.0.0"
   }
 }
