@@ -23,3 +23,13 @@ Uninstall it globally with:
 ```shell
 yarn global remove @caedes/git-branch-new
 ```
+
+## Contribution
+
+[How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+
+To run the CLI in development mode just run:
+
+```shell
+yarn dev
+```
